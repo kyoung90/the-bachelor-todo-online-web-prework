@@ -49,7 +49,7 @@ def get_average_age_for_season(data, season)
    people_counter = 0
    
    data[season].each do |contestants_array|
-     total_age += contestants_array["age"].to_i
+     total_age += contestants_array["age"].to_f
      people_counter += 1.0 
    end 
    
@@ -57,7 +57,7 @@ def get_average_age_for_season(data, season)
    puts people_counter
 
   average_age_not_rounded = (total_age / people_counter)
-  average_age = (average_age_not_rounded*100).round /100
+  average_age = average_age_not_rounded.round 
    
    return average_age
 end
