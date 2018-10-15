@@ -52,12 +52,8 @@ def get_average_age_for_season(data, season)
      total_age += contestants_array["age"].to_f
      people_counter += 1.0 
    end 
-   
-   puts total_age
-   puts people_counter
 
-  average_age_not_rounded = (total_age / people_counter)
-  average_age = average_age_not_rounded.round 
+  average_age = (total_age / people_counter).round 
    
    return average_age
 end
