@@ -1,5 +1,3 @@
-require 'pry'
-
 def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each do |season_info|
@@ -58,4 +56,3 @@ def get_average_age_for_season(data, season)
    return total_age/people_counter
 end
 
-binding.pry()
