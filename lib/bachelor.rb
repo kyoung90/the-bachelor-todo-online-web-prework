@@ -56,8 +56,8 @@ def get_average_age_for_season(data, season)
    puts total_age
    puts people_counter
 
-  average_age = ((total_age/people_counter)*100)
+  average_age = ((total_age/people_counter)*100).round /100
    
-   return total_age/people_counter
+   return average_age
 end
 
