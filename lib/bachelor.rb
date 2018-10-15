@@ -53,6 +53,9 @@ def get_average_age_for_season(data, season)
      people_counter += 1
    end 
    
+   puts total_age
+   puts people_counter
+   
    return total_age/people_counter
 end
 
