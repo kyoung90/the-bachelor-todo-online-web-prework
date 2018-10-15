@@ -57,3 +57,5 @@ def get_average_age_for_season(data, season)
    
    return total_age/people_counter
 end
+
+binding.pry()
