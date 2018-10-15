@@ -49,7 +49,7 @@ def get_average_age_for_season(data, season)
    people_counter = 0
    
    data[season].each do |contestants_array|
-     total_age += contestants_array["age"].to_f
+     total_age += contestants_array["age"].to_i
      people_counter += 1.0 
    end 
    
